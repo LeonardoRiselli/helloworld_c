@@ -11,7 +11,7 @@ int main(){
   if (a>b){
     printf("Il maggiore tra i due è %d \n ",a);
   }
-  if (b>a){
+  else{
     printf("Il maggiore tra i due è %d \n ",b);
   }
 
