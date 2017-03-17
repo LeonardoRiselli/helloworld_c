@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  int a, b, c, d, e;
+  int a, b, c, d, e,magg;
 
   printf("Dimmi A: ");
   scanf("%d", &a);
@@ -14,21 +14,23 @@ int main(){
   printf("Dimmi E: ");
   scanf("%d", &e);
 
-  if (a>b && a>c && a>d && a>e){
-    printf ( "Il maggiore è %d \n ",a );
+  magg=a;
+
+  if (b>magg){
+    magg=b;
   }
-  else if (b>a && b>c && b>d && b>e){
-    printf ( "Il maggiore è %d \n ",b );
+  if (c>magg){
+    magg=c;
   }
-  else if (c>b && c>d && c>a && c>e){
-    printf ( "Il maggiore è %d \n ",c );
+  if (d>magg){
+    magg=d;
   }
-  else if (d>b && d>c && d>a && d>e){
-    printf ( "Il maggiore è %d \n ",d );
+  if (e>magg){
+    magg=e;
   }
-  else{
-    printf ( "Il maggiore è %d \n ",e );
-  }
+
+  printf("il maggiore è %d \n ", magg);
+  
 
   return 0;
 
