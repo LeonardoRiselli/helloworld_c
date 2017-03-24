@@ -2,7 +2,7 @@
 
 int main ()
 {
-  int num, somma, n1, n2, n3;
+  int num, somma;
 
   printf( "numero di 3 cifre: " );
   scanf("%d", &num);
@@ -13,14 +13,12 @@ int main ()
   }
   else
   {
-    n1=num%10;
-    n2=num/10;
-    n3=n2/10;
-    n2=n2%10;
-    n3=n3%10;
+    somma=num%10;
+    num=num/10;
+    somma=somma+(num%10);
+    num=num/10;
+    somma=somma+(num%10);
     
-    somma=n1+n2+n3;
-
     printf( "la somma tra le cifre è %d \n",somma);
   }
 
